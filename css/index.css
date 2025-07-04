@@ -1,0 +1,93 @@
+/* Mobile First View: */
+
+h2 {
+	display: none;
+}
+
+aside {
+	background: #e65531;
+	font-size: 120%;
+	padding: 5px 0;
+	text-align: center;
+	width: 100%;
+}
+
+/* Style the links in the aside section */
+aside a {
+	color: #43cfcf;
+	display: block;
+	padding: 5px 0;
+	text-decoration: none;
+	width: 100%;
+}
+
+/* Change the color of aside links on hover using mouse */
+aside a:hover {
+	background-color: #f5a031;
+	color: white;
+}
+
+
+/* Change the color of aside links on focus using tab key */
+aside a:focus {
+  background-color: #22f5e3;
+  color: #E3DFDE;
+  outline: none;
+}
+
+
+article {
+	background-color: #f74932;
+	color: #d8cfcb;
+	font-size: 120%;
+	padding: 0 10px;
+}
+
+article a {
+	color: #44d6ec;
+	padding: 5px;
+	text-decoration: none;
+}
+
+/* Change the color of article links on hover using mouse */
+article a:hover {
+  background-color: #f32424;
+  color: #fc9c30;
+}
+
+
+/* Change the color of article links on focus using tab key */
+article a:focus {
+  background-color: rgb(243, 52, 52);
+  color: #59f8d0;
+  outline: none;
+}
+
+#main_image {
+	width: 100%;
+}
+
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+
+	main {
+		display: flex;
+	}
+
+	aside {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		float: left;
+		justify-content: center;
+		width: 30%;
+	}
+
+	section {
+		display: inline;
+		float: right;
+		width: 70%;
+	}
+
+}
